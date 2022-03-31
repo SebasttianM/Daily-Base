@@ -1,0 +1,56 @@
+{
+    "questions":[
+        {
+            "id": 1,
+            "question": "¿Qué etiqueta es semánticamente correcta para el contenido principal?",
+            "option1": "main",
+            "option2": "section",
+            "option3": "header"
+        },
+        {
+            "id": 2,
+            "question": "¿Qué etiqueta HTML nos sirve para incluir archivos de JavaScript?",
+            "option1": "<br>",
+            "option2": "<script>",
+            "option3": "<styles>"
+        },
+        {
+            "id": 3,
+            "question": "¿Qué significa DRY?",
+            "option1": "Don’t repeat yellow",
+            "option2": "Don’t repeat yourself",
+            "option3": "Don’t recicle year"
+        },
+        {
+            "id": 4,
+            "question": "Organiza la estructura de un documento HTML5",
+            "option1": "<!DOCTYPE html>",
+            "option2": "<html>",
+            "option3": "<head> </head>",
+            "option4": "<body> </body>",
+            "option5": "</html>"
+        },
+        {
+            "id": 5,
+            "question": "¿Qué tecnologías pertenece al MEVN Stack?",
+            "option1": "Angular",
+            "option2": "Vue.js",
+            "option4": "Windows",
+            "option5": "Kotlin"
+        }
+    ],
+    "users":[
+        {
+            "id": 1,
+            "nombre": "Ernest Hemingway",
+            "correo": "ErnestH@writer.com",
+            "imagen": "https://www.buscabiografias.com/img/people/Ernest_Hemingway.jpg"
+        },
+        {
+            "id": 2,
+            "nombre": "Sebastian Marin",
+            "correo": "SebasM@music.com",
+            "imagen": "https://res.cloudinary.com/svartblood/image/upload/v1648681862/me21_fo5umu.jpg"
+        }
+    ]
+}
