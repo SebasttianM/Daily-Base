@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios  from "axios";
+
+
 import {
     ButtonRegister,
     ForgotPassword,
@@ -23,45 +25,52 @@ import { url } from "../helpers/url";
 
 const Registro = () => {
 
+    const navigate = useNavigate()
 
-    const [email, setEmail] = useState();
 
+    const [userBd, setUserBd] = useState()
 
-    const [emailSearch, setEmailSearch] = useState()
-
+    const [user, setUser] = useState()
+    
     const getEmail = () => {
         axios.get(url)
-        .then(resp=> {console.log(resp.data)
-        setEmail(resp.data)
+        .then(resp=> {
+        setUserBd(resp.data)
+      
         })
 
         .catch(error=>console.log(error))
     };
 
-    
-
-    const submitPrevent= (e)=>{
+    const handleSubmit= (e)=>{
         e.preventDefault()
+        searchUser(user)
     }
     
-   
 
     useEffect(() => {
       getEmail();
     }, [])
     
-    // const{correo}= email
-
-    const handleChange= ({target})=>{
-        
-        setEmailSearch(target.value)
-
-         if (setEmailSearch === emailSearch) {
-             console.log(email)
-         } else {
-            
-         }
+    const handleChange=({target})=>{
+        setUser(target.value)
     }
+
+    console.log(user)
+
+    const searchUser=(correo)=>{
+        const busqueda= userBd.find(
+            use=> use.correo.toString().toLowerCase().includes(correo.toLowerCase())
+        )
+        if(busqueda.correo=== user.toString()){
+            console.log('Existe el correo')
+            navigate('/categories')
+            
+        }else{
+            alert('No estas registrado')
+        }
+    }
+
 
     return (
         <Register>
@@ -86,9 +95,9 @@ const Registro = () => {
                                 </LoginTitle>
                             </ButtonRegister>
                             <LoginLine />
-                            <InputEmail onSubmit={submitPrevent}>
+                            <InputEmail onSubmit={handleSubmit}>
                                 <InputTitle>Correo electronico</InputTitle>
-                                <InputSearch placeholder="Ingrese su correo electronico"  onChange={handleChange}/>
+                                <InputSearch placeholder="Ingrese su correo electronico" onChange={handleChange} />
                             </InputEmail>
                         
                     </RegisterEmail>
@@ -97,7 +106,7 @@ const Registro = () => {
                 <ForgotPassword>
                     <Link to="#">Se te olvido tu contrasena?</Link>
                 </ForgotPassword>
-                <Suscribe>Aun no tienes cuenta? Inscribete{emailSearch}</Suscribe>
+                <Suscribe>Aun no tienes cuenta? Inscribete</Suscribe>
             </MainRegister>
         </Register>
     );

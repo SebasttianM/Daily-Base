@@ -351,3 +351,315 @@ export const Suscribe = styled.p`
     flex-grow: 0;
     margin: 32px 0px;
 `;
+
+////Styled Categories
+
+
+export const CategoriesStyle = styled.div`
+    position: relative;
+    width: 393px;
+    height: 100vh;
+    background: #16161a;
+`;
+
+export const TopAnnounce = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px;
+
+    position: absolute;
+    width: 393px;
+    height: 82px;
+    left: 0px;
+    top: 0px;
+`;
+export const Announce = styled.p`
+    position: static;
+    width: 350px;
+    height: 50px;
+    left: 16px;
+    top: 16px;
+
+    /* Subtitle/Subtitle 1 */
+
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.0015em;
+
+    color: #fffffe;
+
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    margin: 0px 16px;
+`;
+
+export const MainCategories = styled.main`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+    position: absolute;
+    width: 393px;
+    height:560px;
+    left: 0px;
+    top: 115px;
+    border: 1px red solid;
+`;
+
+export const HtmlContainer = styled.div`
+    position: static;
+    width: 96px;
+    height: 128px;
+    left: 132px;
+    top: 0px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 24px 0px;
+    border: 1px red solid;
+`;
+
+export const HtmlCage = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+    position: absolute;
+    width: 96px;
+    height: 128px;
+    left: 0px;
+    top: 0px;
+    border: 1px red solid;
+`;
+
+export const HtmlText = styled.div`
+    position: static;
+    left: 0%;
+    right: 0%;
+    top: 81.25%;
+    bottom: 0%;
+
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+
+    text-align: center;
+    letter-spacing: 0.005em;
+
+    color: #fffffe;
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 8px 0px;
+`;
+
+export const HtmlImg = styled.img`
+    position: static;
+    width: 90px;
+    height: 90px;
+    left: 0px;
+    top: 0px;
+    justify-content: center;
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 8px 0px;
+`;
+
+export const Section2 = styled.section`
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: static;
+    width: 216px;
+    height: 128px;
+    left: 72px;
+    top: 152px;
+    border: 1px red solid;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 24px 0px;
+`;
+
+export const CssContainer = styled.div`
+    position: static;
+    width: 96px;
+    height: 128px;
+    left: 0px;
+    top: 0px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 24px;
+`;
+
+export const CssText = styled.p`
+    position: static;
+    left: 0%;
+    right: 0%;
+    top: 81.25%;
+    bottom: 0%;
+
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+ 
+    text-align: center;
+    letter-spacing: 0.005em;
+
+    color: #fffffe;
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 8px 0px;
+`;
+
+export const CssImg = styled.img`
+    position: static;
+    width: 96px;
+    height: 96px;
+    left: 0px;
+    top: 0px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 8px 0px;
+    margin-left: -18px;
+`;
+
+export const JsContainer = styled.div`
+    position: static;
+    width: 96px;
+    height: 128px;
+    left: 120px;
+    top: 0px;
+
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin-left: -26px;
+    border: 1px solid red;
+`;
+
+export const JsText = styled.p`
+    position: static;
+    left: 0%;
+    right: 0%;
+    top: 81.25%;
+    bottom: 0%;
+
+    /* Body 1/Bold */
+
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    text-align: center;
+    letter-spacing: 0.005em;
+
+    /* White */
+
+    color: #fffffe;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 8px 0px;
+`;
+
+export const JsImg = styled.img`
+    position: static;
+    width: 96px;
+    height: 96px;
+    left: 0px;
+    top: 0px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 8px 0px;
+`;
+
+export const Section3 = styled.section`
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: static;
+    width: 216px;
+    height: 128px;
+    left: 72px;
+    top: 304px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 24px 0px;
+`;
+
+export const FigmaContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: static;
+    width: 216px;
+    height: 128px;
+    left: 72px;
+    top: 304px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 24px 0px;
+`;
+
+export const FigmaImg = styled.img`
+background-position: top;
+`
