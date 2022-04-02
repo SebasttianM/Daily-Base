@@ -408,7 +408,7 @@ export const MainCategories = styled.main`
 
     position: absolute;
     width: 393px;
-    height:560px;
+    height:80vhpx;
     left: 0px;
     top: 115px;
     border: 1px red solid;
@@ -425,7 +425,6 @@ export const HtmlContainer = styled.div`
     order: 0;
     flex-grow: 0;
     margin: 24px 0px;
-    border: 1px red solid;
 `;
 
 export const HtmlCage = styled.div`
@@ -440,7 +439,6 @@ export const HtmlCage = styled.div`
     height: 128px;
     left: 0px;
     top: 0px;
-    border: 1px red solid;
 `;
 
 export const HtmlText = styled.div`
@@ -494,7 +492,6 @@ export const Section2 = styled.section`
     height: 128px;
     left: 72px;
     top: 152px;
-    border: 1px red solid;
 
     /* Inside auto layout */
     flex: none;
@@ -570,7 +567,6 @@ export const JsContainer = styled.div`
     order: 1;
     flex-grow: 0;
     margin-left: -26px;
-    border: 1px solid red;
 `;
 
 export const JsText = styled.p`
@@ -623,15 +619,15 @@ export const JsImg = styled.img`
 export const Section3 = styled.section`
     display: flex;
     flex-direction: row;
+    justify-content: end;
     align-items: flex-start;
     padding: 0px;
 
     position: static;
-    width: 216px;
+    width: 218px;
     height: 128px;
     left: 72px;
     top: 304px;
-
     /* Inside auto layout */
 
     flex: none;
@@ -641,25 +637,351 @@ export const Section3 = styled.section`
 `;
 
 export const FigmaContainer = styled.div`
+    position: static;
+    width: 96px;
+    height: 128px;
+    left: 120px;
+    top: 0px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px -1px;
+`;
+
+export const FigmaImg = styled.img`
+    position: static;
+    width: 96px;
+    height: 96px;
+    left: 0px;
+    top: 0px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 8px 0px;
+`;
+export const FigmaText = styled.p`
+    position: static;
+    left: 0%;
+    right: 0%;
+    top: 81.25%;
+    bottom: 0%;
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: #fffffe;
+    flex: none;
+    
+`;
+export const UxContainer = styled.div`
+    position: static;
+    width: 96px;
+    height: 128px;
+    left: 120px;
+    top: 0px;
+
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 10px;
+`;
+
+export const UxImg = styled.img`
+    position: flex;
+    width: 96px;
+    height: 96px;
+    left: 0px;
+    top: 0px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 8px 0px;
+`;
+
+export const UxText = styled.p`
+    left: 0%;
+    right: 0%;
+    top: 81.25%;
+    bottom: 0%;
+
+    /* Body 1/Bold */
+
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    text-align: center;
+    letter-spacing: 0.005em;
+
+    color: #fffffe;
+
+    
+`;
+
+export const Footer = styled.footer`
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+
+    position: static;
+    width: 393px;
+    height: 70px;
+    left: 0px;
+    bottom: 0px;
+
+    /* Neutral */
+
+    background: #232e35;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 3;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 20px 0px;
+`;
+
+export const PerfilContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 0px;
 
     position: static;
-    width: 216px;
-    height: 128px;
-    left: 72px;
-    top: 304px;
+    width: 34px;
+    height: 45px;
+    left: 300px;
+    top: 12px;
+
+    /* Neutral */
+
+    background: #232e35;
+    border-radius: 80px;
 
     /* Inside auto layout */
 
     flex: none;
     order: 2;
     flex-grow: 0;
-    margin: 24px 0px;
+    margin: 0px 80px;
 `;
 
-export const FigmaImg = styled.img`
-background-position: top;
+export const PerfilCage = styled.img`
+    position: static;
+    width: 24px;
+    height: 24px;
+    left: 5px;
+    top: 0px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 2px 0px;
+`; 
+
+export const PerfilIcon = styled.img`
+   
+`;
+
+export const PerfilText= styled.span`
+position: static;
+width: 34px;
+height: 19px;
+left: 0px;
+top: 26px;
+
+/* Body 2/Regular */
+
+font-family: 'Nunito';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+letter-spacing: 0.005em;
+
+/* White */
+
+color: #FFFFFE;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 2px 0px;
 `
+
+export const Estadisticas = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+    position: static;
+    width: 75px;
+    height: 45px;
+    left: 145px;
+    top: 12px;
+
+    /* Neutral */
+
+    background: #232e35;
+    border-radius: 80px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 80px;
+`;
+
+export const EstadisticasImg = styled.img`
+    position: static;
+    width: 24px;
+    height: 24px;
+    left: 25.5px;
+    top: 0px;
+
+    /* Inside auto layout */
+    color: white;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 2px 0px;
+`;
+export const EstadisticasText = styled.span`
+    position: static;
+    width: 75px;
+    height: 19px;
+    left: 0px;
+    top: 26px;
+
+    /* Body 2/Regular */
+
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.005em;
+
+    /* White */
+
+    color: #fffffe;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 2px 0px;
+`;
+
+export const Home = styled.div`
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+    position: static;
+    width: 39px;
+    height: 45px;
+    left: 26px;
+    top: 12px;
+
+    /* Neutral */
+
+    background: #232e35;
+    border-radius: 80px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 80px;
+`;
+
+export const HomeIcon = styled.img`
+    position: static;
+    width: 24px;
+    height: 24px;
+    left: 7.5px;
+    top: 0px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 2px 0px;
+`;
+
+export const HomeText = styled.span`
+    position: static;
+    width: 39px;
+    height: 19px;
+    left: 0px;
+    top: 26px;
+
+    /* Body 2/Regular */
+
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.005em;
+
+    /* Green */
+
+    color: #2cb67d;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 2px 0px;
+`;

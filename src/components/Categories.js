@@ -5,6 +5,16 @@ import {
     CssContainer,
     CssImg,
     CssText,
+    Estadisticas,
+    EstadisticasImg,
+    EstadisticasText,
+    FigmaContainer,
+    FigmaImg,
+    FigmaText,
+    Footer,
+    Home,
+    HomeIcon,
+    HomeText,
     HtmlCage,
     HtmlContainer,
     HtmlImg,
@@ -13,8 +23,15 @@ import {
     JsImg,
     JsText,
     MainCategories,
+    PerfilCage,
+    PerfilContainer,
+    PerfilIcon,
     Section2,
+    Section3,
     TopAnnounce,
+    UxContainer,
+    UxImg,
+    UxText,
 } from "../style/styled";
 
 const Categories = () => {
@@ -46,6 +63,44 @@ const Categories = () => {
                         <JsText>JS</JsText>
                     </JsContainer>
                 </Section2>
+                <Section3>
+                    <FigmaContainer>
+                        <FigmaImg
+                            src="https://res.cloudinary.com/svartblood/image/upload/v1648872799/dailybits/figg_xzcenx.png"
+                            alt=""
+                        />
+                        <FigmaText>FIGMA</FigmaText>
+                    </FigmaContainer>
+                    <UxContainer>
+                        <UxImg
+                            src="https://res.cloudinary.com/svartblood/image/upload/v1648872688/dailybits/Ux_pgw6ag.png"
+                            alt=""
+                        />
+                        <UxText> UX</UxText>
+                    </UxContainer>
+                </Section3>
+                <Footer>
+                    <PerfilContainer>
+                        <PerfilCage
+                            src="https://res.cloudinary.com/svartblood/image/upload/v1648880991/dailybits/logosDailybits/perfil_eohckv.png"
+                            alt=""
+                        />
+                    </PerfilContainer>
+                    <Estadisticas>
+                        <EstadisticasImg
+                            src="https://res.cloudinary.com/svartblood/image/upload/v1648668445/dailybits/logosDailybits/Property_1_activity_wzwo0q.svg"
+                            alt=""
+                        />
+                        <EstadisticasText>Estadisticas</EstadisticasText>
+                    </Estadisticas>
+                    <Home>
+                        <HomeIcon
+                            src="https://res.cloudinary.com/svartblood/image/upload/v1648668445/dailybits/logosDailybits/Property_1_home_gebz1d.svg"
+                            alt=""
+                        />
+                        <HomeText>Home</HomeText>
+                    </Home>
+                </Footer>
             </MainCategories>
         </CategoriesStyle>
     );
